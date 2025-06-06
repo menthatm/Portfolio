@@ -12,3 +12,15 @@ function menuClick() {
   burger.classList.remove("active");
   nav.classList.remove("active");
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const bobbel = document.getElementById("bobbel_sprite1");
+
+  bobbel.addEventListener("click", function () {
+    bobbel.classList.add("bobbel-forsvind");
+
+    // Vent til animationen er færdig, så fjern den
+    setTimeout(function () {
+      bobbel.remove();
+    }, 500); // skal matche CSS-transition: 0.5s
+  });
+});

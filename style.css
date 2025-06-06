@@ -88,3 +88,87 @@ nav {
     font-size: 24px;
   }
 }
+
+h1 {
+  text-align: center;
+  color: #f8f5ef;
+}
+
+body {
+  background-color: #0f1013;
+}
+
+p {
+  color: #f8f5ef;
+}
+
+.tema {
+  text-decoration: none;
+  padding: 10px;
+
+  text-align: center;
+
+  -webkit-text-fill-color: #f8f5ef;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fd99fc;
+}
+
+.footerhead {
+  text-align: center;
+  -webkit-text-fill-color: #f8f5ef;
+}
+.footerp {
+  text-align: center;
+  -webkit-text-fill-color: #f8f5ef;
+}
+
+.footergrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.tocol {
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.videre {
+  text-align: center;
+  text-decoration: none;
+}
+
+.forside {
+  padding: 90px;
+  margin-top: 50px;
+}
+/* Allerede eksisterende boble-stil */
+#bobbel_sprite1 {
+  width: 50px;
+  height: 50px;
+  background-color: #87ceeb;
+  background: linear-gradient(#87ceeb, #f378f7);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatUp 7s linear infinite;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-600px);
+  }
+}
+
+/* Når boblen "forsvinder" */
+.bobbel-forsvind {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.2);
+}
