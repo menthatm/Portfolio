@@ -157,6 +157,38 @@ p {
   cursor: pointer;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+#bobbel_sprite2 {
+  width: 50px;
+  height: 50px;
+  background-color: #87ceeb;
+  background: linear-gradient(#87ceeb, #f378f7);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatUp 7s linear infinite;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  translate: 150px;
+}
+#bobbel_sprite3 {
+  width: 50px;
+  height: 50px;
+  background-color: #87ceeb;
+  background: linear-gradient(#87ceeb, #f378f7);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatUp 7s linear infinite;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  translate: 100px;
+}
 
 @keyframes floatUp {
   from {

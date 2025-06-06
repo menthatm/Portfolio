@@ -24,3 +24,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500); // skal matche CSS-transition: 0.5s
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const bobbel = document.getElementById("bobbel_sprite2");
+
+  bobbel.addEventListener("click", function () {
+    bobbel.classList.add("bobbel-forsvind");
+
+    // Vent til animationen er færdig, så fjern den
+    setTimeout(function () {
+      bobbel.remove();
+    }, 500); // skal matche CSS-transition: 0.5s
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const bobbel = document.getElementById("bobbel_sprite3");
+
+  bobbel.addEventListener("click", function () {
+    bobbel.classList.add("bobbel-forsvind");
+
+    // Vent til animationen er færdig, så fjern den
+    setTimeout(function () {
+      bobbel.remove();
+    }, 500); // skal matche CSS-transition: 0.5s
+  });
+});
