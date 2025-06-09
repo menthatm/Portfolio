@@ -1,50 +1,52 @@
-const burger = document.querySelector(".burger");
-const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu");
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.body;
 
-burger.addEventListener("click", burgerClick);
-function burgerClick() {
-  burger.classList.toggle("active");
-  nav.classList.toggle("active");
-}
-menu.addEventListener("click", menuClick);
-function menuClick() {
-  burger.classList.remove("active");
-  nav.classList.remove("active");
-}
-document.addEventListener("DOMContentLoaded", function () {
-  const bobbel = document.getElementById("bobbel_sprite1");
+  function createBubble(id) {
+    const bobbel = document.createElement("div");
+    bobbel.classList.add("bobbel");
+    bobbel.id = id;
 
-  bobbel.addEventListener("click", function () {
-    bobbel.classList.add("bobbel-forsvind");
+    // 🎯 Random position, størrelse og delay
+    const randomLeft = Math.random() * 90;
+    const randomSize = 30 + Math.random() * 50;
+    const randomDelay = Math.random() * 5;
 
-    // Vent til animationen er færdig, så fjern den
-    setTimeout(function () {
-      bobbel.remove();
-    }, 500); // skal matche CSS-transition: 0.5s
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const bobbel = document.getElementById("bobbel_sprite2");
+    // 🎨 Stil boblen direkte via JS
+    Object.assign(bobbel.style, {
+      width: `${randomSize}px`,
+      height: `${randomSize}px`,
+      left: `${randomLeft}%`,
+      position: "absolute",
+      bottom: "0",
+      background: "linear-gradient(#87ceeb, #f378f7)",
+      opacity: "0.75",
+      borderRadius: "50%",
+      cursor: "pointer",
+      transform: "translateX(-50%)",
+      animation: `floatUp 7s linear infinite`,
+      animationDelay: `${randomDelay}s`,
+      transition: "opacity 0.5s ease, transform 0.5s ease",
+    });
 
-  bobbel.addEventListener("click", function () {
-    bobbel.classList.add("bobbel-forsvind");
+    // 🧼 Klik-effekt med "cute" animation og respawn
+    bobbel.addEventListener("click", () => {
+      bobbel.classList.add("bobbel-forsvind");
+      setTimeout(() => {
+        bobbel.remove();
+        createBubble(id);
+      }, 500); // svarer til CSS-transition
+    });
 
-    // Vent til animationen er færdig, så fjern den
-    setTimeout(function () {
-      bobbel.remove();
-    }, 500); // skal matche CSS-transition: 0.5s
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const bobbel = document.getElementById("bobbel_sprite3");
+    container.appendChild(bobbel);
+  }
 
-  bobbel.addEventListener("click", function () {
-    bobbel.classList.add("bobbel-forsvind");
-
-    // Vent til animationen er færdig, så fjern den
-    setTimeout(function () {
-      bobbel.remove();
-    }, 500); // skal matche CSS-transition: 0.5s
-  });
+  // Start med tre bobler
+  createBubble("bobbel_sprite1");
+  createBubble("bobbel_sprite2");
+  createBubble("bobbel_sprite3");
+  createBubble("bobbel_sprite4");
+  createBubble("bobbel_sprite5");
+  createBubble("bobbel_sprite6");
+  createBubble("bobbel_sprite7");
+  createBubble("bobbel_sprite1");
 });
