@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       transition: "opacity 0.5s ease, transform 0.5s ease",
     });
 
-    // 🧼 Klik-effekt med "cute" animation og respawn
+    // Klik-effekt
     bobbel.addEventListener("click", () => {
       bobbel.classList.add("bobbel-forsvind");
       setTimeout(() => {
