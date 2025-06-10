@@ -145,7 +145,13 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     text-align: center;
+    margin: 50px;
+    margin-top: 50px;
   }
+  .porttop {
+    margin-top: 5%;
+  }
+
   /***Bevæg billede ved hover***/
   .portfolio1,
   .portfolio2,
@@ -156,7 +162,7 @@ h1 {
   }
 
   .portfolio1 :hover {
-    font-size: xx-large;
+    font-size: medium;
   }
 }
 
@@ -268,6 +274,7 @@ p {
 }
 
 .footerhead {
+  margin-top: 50px;
   text-align: center;
   -webkit-text-fill-color: #f8f5ef;
 }
@@ -330,5 +337,15 @@ h2 {
   text-decoration-color: #f378f7;
   font-family: "Taviraj", serif;
   border-style: outset;
-  border-radius: 10px;
+  border-radius: 5px;
+  border-right-width: 2px;
+  contain: layout;
+}
+.enter:hover {
+  text-decoration-color: #f378f7;
+  font-family: "Taviraj", serif;
+  border-style: outset;
+  border-radius: 5px;
+  border-right-width: 2px;
+  contain: layout;
 }

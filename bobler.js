@@ -46,7 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
   createBubble("bobbel_sprite3");
   createBubble("bobbel_sprite4");
   createBubble("bobbel_sprite5");
-  createBubble("bobbel_sprite6");
-  createBubble("bobbel_sprite7");
-  createBubble("bobbel_sprite1");
 });
