@@ -64,20 +64,19 @@
   }
   .image1 {
     position: relative;
-    top: 0;
-    left: 0;
-
-    width: 50%;
+    top: 76px;
+    left: 14px;
+    width: 58%;
   }
   .image2 {
     position: absolute;
-    top: -10px;
-    left: 115px;
-
-    width: 30%;
+    top: 23px;
+    left: 105px;
+    width: 47%;
   }
   .image3 {
-    width: 60%;
+    top: 3%;
+    width: 80%;
   }
 
   .indholdlayout {
@@ -96,17 +95,31 @@
 
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .test1 {
+    position: relative;
+    top: -169px;
+    left: 14px;
+    width: 100%;
+  }
+  .test2 {
+    position: absolute;
+    top: -300px;
+    left: 81px;
+    width: 100%;
+  }
   .ommig {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 60px;
+    margin-bottom: 30px;
     gap: 30px;
   }
   .mentha {
-    width: 60%;
+    margin-top: 60px;
+    width: 80%;
   }
 }

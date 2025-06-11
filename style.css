@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  padding: 3%;
 }
 img {
   height: auto;
@@ -280,9 +281,6 @@ h1 {
 
 body {
   background-color: #0f1013;
-}
-
-h3 {
 }
 
 p {
