@@ -95,9 +95,21 @@
 
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .test1 {
+    position: relative;
+    top: -169px;
+    left: 14px;
+    width: 100%;
+  }
+  .test2 {
+    position: absolute;
+    top: -300px;
+    left: 81px;
+    width: 100%;
+  }
   .ommig {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,6 +119,7 @@
     gap: 30px;
   }
   .mentha {
-    width: 60%;
+    margin-top: 60px;
+    width: 80%;
   }
 }
